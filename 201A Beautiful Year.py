@@ -1,17 +1,19 @@
 def solve(year):
     year = int(year)
-    beautiful_year = False
-    counter = 0
-    while beautiful_year == False:
-        counter += 1
-        next_year = list(str(year + counter))
-        while next_year:
-            beautiful_year = True
-            if next_year.pop() in next_year:
-                beautiful_year = False 
-                break
+    i = 0
 
-    return year + counter
+    is_beautiful = False
+    while not is_beautiful:
+        i += 1
+
+        next_year = list(str(year + i))
+        while next_year != []:
+            if next_year.pop() in next_year:
+                break
+        else:
+            is_beautiful = True
+
+    return year + i
 
 
 if __name__ == '__main__':

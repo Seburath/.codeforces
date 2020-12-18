@@ -1,5 +1,3 @@
-
-
 def solve(word):
     lowercase = 'abcdefghijklmnopqrstuvwxyz'
     lower_count = len([letter for letter in word if letter in lowercase])

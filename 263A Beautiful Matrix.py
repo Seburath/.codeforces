@@ -1,7 +1,8 @@
 def solve(matrix):
     for i, row in enumerate(matrix.split('\n')):
         if '1' in row:
-            return abs(i - 2) + abs(row.find('1')//2 - 2)
+            x, y = abs(i - 2), abs(row.find('1')//2 - 2)
+            return x + y
 
 
 if __name__ == '__main__':

@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-
 def valid_room(people):
     p, q = map(int, people.split())
     return 1 if q - p >= 2 else 0
